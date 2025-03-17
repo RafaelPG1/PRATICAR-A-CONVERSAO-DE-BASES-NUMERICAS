@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decimal</title>
+  <link rel="stylesheet" href="decimal.css">
+</head>
+
+<body>
+  <h1>DECIMAL</h1>
+
+  <div class="input-container">
+    <label>De 1 a <input type="number" id="max-number" class="small-input" value="100"></label>
+    <label>Número: <input type="text" id="result" disabled class="small-input"></label>
+  </div>
+
+  <!-- Caixa de texto abaixo do título -->
+<input type="text" id="input-number" placeholder="Digite" autocomplete="off" autocorrect="off" spellcheck="false">
+
+  
+  <h2 class="left-header">
+    <label>
+      <input type="radio" class="checkbox" name="checkbox" value="binario">
+      Decimal para binário
+    </label><br>
+    <label>
+      <input type="radio" class="checkbox" name="checkbox" value="hexadecimal">
+      Decimal para Hexadecimal
+    </label><br>
+    <label>
+      <input type="radio" class="checkbox" name="checkbox" value="octal">
+      Decimal para Octal
+    </label><br>
+  </h2>
+
+  <div class="container">
+    <button onclick="sortearNumero()">SORTEAR</button>
+    <button onclick="confirmarNumero()">CONFIRMAR</button>
+    <button onclick="Apagartudo()">LIMPAR</button>
+    <br> <a href="https://rafaelpg1.github.io/PRATICAR-A-CONVERSAO-DE-BASES-NUMERICAS/" class="btn">VOLTAR</a>
+  </div>
+
+  <div id="long-division"></div> <!-- Aqui será desenhada a divisão -->
+
+  <script src="decimal.js"></script>
+</body>
+
+</html>
